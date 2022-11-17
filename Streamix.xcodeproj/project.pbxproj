@@ -14,6 +14,10 @@
 		E811142E29269F1000D43AA3 /* StreamixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E811142D29269F1000D43AA3 /* StreamixTests.swift */; };
 		E811143829269F1000D43AA3 /* StreamixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E811143729269F1000D43AA3 /* StreamixUITests.swift */; };
 		E811143A29269F1000D43AA3 /* StreamixUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E811143929269F1000D43AA3 /* StreamixUITestsLaunchTests.swift */; };
+		E811144C2926A03800D43AA3 /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E811144B2926A03800D43AA3 /* HomeTabView.swift */; };
+		E811144F2926A25D00D43AA3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E811144E2926A25D00D43AA3 /* SettingsView.swift */; };
+		E81114512926AD2800D43AA3 /* MoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81114502926AD2800D43AA3 /* MoviesView.swift */; };
+		E81114532926AD3400D43AA3 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81114522926AD3400D43AA3 /* DiscoverView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		E811143329269F1000D43AA3 /* StreamixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StreamixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E811143729269F1000D43AA3 /* StreamixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamixUITests.swift; sourceTree = "<group>"; };
 		E811143929269F1000D43AA3 /* StreamixUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamixUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E811144B2926A03800D43AA3 /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
+		E811144E2926A25D00D43AA3 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E81114502926AD2800D43AA3 /* MoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesView.swift; sourceTree = "<group>"; };
+		E81114522926AD3400D43AA3 /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,10 @@
 		E811141B29269F0C00D43AA3 /* Streamix */ = {
 			isa = PBXGroup;
 			children = (
+				E811144D2926A24E00D43AA3 /* View */,
+				E81114482926A00500D43AA3 /* Networking */,
+				E811144729269FFE00D43AA3 /* Model */,
+				E811144629269FF400D43AA3 /* AsyncImage */,
 				E811141C29269F0C00D43AA3 /* StreamixApp.swift */,
 				E811141E29269F0C00D43AA3 /* ContentView.swift */,
 				E811142029269F1000D43AA3 /* Assets.xcassets */,
@@ -125,6 +137,38 @@
 				E811143929269F1000D43AA3 /* StreamixUITestsLaunchTests.swift */,
 			);
 			path = StreamixUITests;
+			sourceTree = "<group>";
+		};
+		E811144629269FF400D43AA3 /* AsyncImage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AsyncImage;
+			sourceTree = "<group>";
+		};
+		E811144729269FFE00D43AA3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E81114482926A00500D43AA3 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E811144D2926A24E00D43AA3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E811144B2926A03800D43AA3 /* HomeTabView.swift */,
+				E811144E2926A25D00D43AA3 /* SettingsView.swift */,
+				E81114502926AD2800D43AA3 /* MoviesView.swift */,
+				E81114522926AD3400D43AA3 /* DiscoverView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +301,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E81114512926AD2800D43AA3 /* MoviesView.swift in Sources */,
+				E811144C2926A03800D43AA3 /* HomeTabView.swift in Sources */,
+				E811144F2926A25D00D43AA3 /* SettingsView.swift in Sources */,
 				E811141F29269F0C00D43AA3 /* ContentView.swift in Sources */,
 				E811141D29269F0C00D43AA3 /* StreamixApp.swift in Sources */,
+				E81114532926AD3400D43AA3 /* DiscoverView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

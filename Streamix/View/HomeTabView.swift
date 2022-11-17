@@ -20,11 +20,13 @@ struct HomeTabView: View {
         TabView(selection: $selectedTab) {
             MoviesView().tabItem {
                 Text("Movies")
-                Image(systemName: "film")
+                Image(systemName: "film").imageScale(.large)
+                    .tag(Tab.movie)
             }
             DiscoverView().tabItem {
                 Text("Discover")
-                Image(systemName: "square.stack")
+                Image(systemName: "square.stack").imageScale(.large)
+                    .tag(Tab.discover)
             }
         }
     }

@@ -9,8 +9,8 @@ import Foundation
 
 enum MovieURL: String {
     case nowPlaying = "now_playing"
-    case upcoming
-    case popular
+    case upcoming = "upcoming"
+    case popular = "popular"
     
     public var urlString: String {
         "baseURL\(self.rawValue)?api_key=\(API.key)&language=en-US&page=1"
